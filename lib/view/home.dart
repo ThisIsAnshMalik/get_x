@@ -72,7 +72,11 @@ class _HomeViewState extends State<HomeView> {
                 title: const Text("Go to Second Screen"),
                 subtitle: const Text("GetX Routing "),
                 onTap: () {
-                  Get.toNamed("/second");
+                  Get.toNamed("/second", arguments: [
+                    "First Argument by ansh",
+                    "Second Argument by ansh",
+                    "Third Argument by ansh"
+                  ]);
                 },
               ),
             ),
