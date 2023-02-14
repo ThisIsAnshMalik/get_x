@@ -66,7 +66,16 @@ class _HomeViewState extends State<HomeView> {
                   ));
                 },
               ),
-            )
+            ),
+            Card(
+              child: ListTile(
+                title: const Text("Go to Second Screen"),
+                subtitle: const Text("GetX Routing "),
+                onTap: () {
+                  Get.toNamed("/second");
+                },
+              ),
+            ),
           ],
         ),
       ),
